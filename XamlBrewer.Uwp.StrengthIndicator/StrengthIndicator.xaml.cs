@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using Windows.UI;
@@ -26,7 +25,6 @@ namespace XamlBrewer.Uwp.Controls
             InitializeComponent();
 
             Paths = DefaultPaths;
-            Debug.WriteLine("Constructed with {0} Paths.", Paths.Count);
 
             Paths.CollectionChanged += Paths_CollectionChanged;
             Loaded += StrengthIndicator_Loaded;
@@ -55,11 +53,6 @@ namespace XamlBrewer.Uwp.Controls
             set { SetValue(ValueProperty, value); }
         }
 
-        public ObservableCollection<String> Paths
-        {
-            get; set;
-        }
-
         public Brush Fill
         {
             get { return (Brush)GetValue(FillProperty); }
@@ -70,6 +63,11 @@ namespace XamlBrewer.Uwp.Controls
         {
             get { return (Brush)GetValue(StrokeProperty); }
             set { SetValue(StrokeProperty, value); }
+        }
+
+        public ObservableCollection<String> Paths
+        {
+            get; set;
         }
 
         // Created by NOPIXEL from the Noun Project

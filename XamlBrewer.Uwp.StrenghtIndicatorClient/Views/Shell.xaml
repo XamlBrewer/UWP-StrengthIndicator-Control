@@ -35,11 +35,6 @@
                         Margin="0">
                 <Border Background="Transparent"
                         ToolTipService.ToolTip="{x:Bind Text}">
-                    <!-- No stretch -->
-                    <!--<PathIcon Data="{x:Bind Glyph}"
-                              Foreground="{StaticResource SplitViewForegroundBrush}"
-                              Height="24"
-                              Width="24" />-->
                     <Path x:Name="Glyph"
                           Data="{x:Bind Glyph}"
                           VerticalAlignment="Center"
@@ -56,8 +51,6 @@
             </StackPanel>
         </DataTemplate>
     </Page.Resources>
-
-    <!-- https://msdn.microsoft.com/windows/uwp/controls-and-patterns/nav-pane -->
 
     <Grid>
         <!-- SplitView -->
@@ -115,14 +108,14 @@
 
                     <!-- SplitViewOpener -->
                     <!-- Comment out when it blocks the UI -->
-                    <Grid ManipulationMode="TranslateX"
+                    <!--<Grid ManipulationMode="TranslateX"
                           ManipulationCompleted="SplitViewOpener_ManipulationCompleted"
                           Width="120"
                           Margin="0"
                           Background="Transparent"
                           HorizontalAlignment="Left"
                           VerticalAlignment="Stretch">
-                    </Grid>
+                    </Grid>-->
                 </Grid>
             </SplitView.Content>
         </SplitView>

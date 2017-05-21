@@ -10,18 +10,13 @@
 
     <Viewbox HorizontalAlignment="Stretch"
              VerticalAlignment="Stretch">
-        <!--<Canvas Height="200"
-                Width="200"
-                Background="HotPink">-->
-            <Path Height="200"
-                  Width="200"
-                  x:Name="Shape"
-                  
-                  Fill="{x:Bind Fill, Mode=OneWay}"
-                  Stroke="{x:Bind Stroke, Mode=OneWay}"
-                  VerticalAlignment="Stretch"
-                  HorizontalAlignment="Stretch"
-                  Stretch="Uniform" />
-        <!--</Canvas>-->
+        <Path Height="200"
+              Width="200"
+              x:Name="Shape"
+              Fill="{x:Bind Fill, Mode=OneWay}"
+              Stroke="{x:Bind Stroke, Mode=OneWay}"
+              VerticalAlignment="Stretch"
+              HorizontalAlignment="Stretch"
+              Stretch="Uniform" />
     </Viewbox>
 </UserControl>
