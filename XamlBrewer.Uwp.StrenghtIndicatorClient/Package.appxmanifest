@@ -14,7 +14,7 @@
   <mp:PhoneIdentity PhoneProductId="93d32ade-9a69-424d-bbc8-4c4fa45b02dd" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>XamlBrewer.Uwp.StrenghtIndicatorClient</DisplayName>
+    <DisplayName>XamlBrewer.Uwp.StrengthIndicatorClient</DisplayName>
     <PublisherDisplayName>Diederik</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="XamlBrewer.Uwp.StrenghtIndicatorClient.App">
+      EntryPoint="XamlBrewer.Uwp.StrengthIndicatorClient.App">
       <uap:VisualElements
-        DisplayName="XamlBrewer.Uwp.StrenghtIndicatorClient"
+        DisplayName="XamlBrewer.Uwp.StrengthIndicatorClient"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="XamlBrewer.Uwp.StrenghtIndicatorClient"
+        Description="XamlBrewer.Uwp.StrengthIndicatorClient"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
