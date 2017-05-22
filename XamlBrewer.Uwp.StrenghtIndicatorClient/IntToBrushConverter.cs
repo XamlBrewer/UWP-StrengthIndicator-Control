@@ -13,12 +13,12 @@ namespace XamlBrewer.Uwp.StrenghtIndicatorClient
     {
         private List<SolidColorBrush> _brushes => new List<SolidColorBrush>
         {
-            new SolidColorBrush(Colors.Silver),
-            new SolidColorBrush(Colors.Green),
-            new SolidColorBrush(Colors.YellowGreen),
-            new SolidColorBrush(Colors.Yellow),
+            new SolidColorBrush(Color.FromArgb(255, 136, 130, 168)),
+            new SolidColorBrush(Colors.SeaGreen),
+            new SolidColorBrush(Colors.LightGreen),
+            new SolidColorBrush(Colors.Khaki),
             new SolidColorBrush(Colors.Orange),
-            new SolidColorBrush(Colors.Red)
+            new SolidColorBrush(Colors.Firebrick)
         };
 
         public object Convert(object value, Type targetType, object parameter, string language)

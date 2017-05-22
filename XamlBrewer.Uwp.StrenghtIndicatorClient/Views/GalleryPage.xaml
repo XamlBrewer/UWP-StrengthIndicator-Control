@@ -9,11 +9,21 @@
 
     <Page.Resources>
         <local:IntToBrushConverter x:Key="IntToBrushConverter" />
+        <controls:PathCollection x:Key="DicePaths">
+            <!-- Created by Marta Ambrosetti from the Noun Project.-->
+            <x:String>m 55.848,50.011002 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z M 83.739,5.021 l -67.478,0 c -6.203,0 -11.25,5.046 -11.25,11.25 l 0,67.48 C 5.011,89.952 10.057,95 16.261,95 l 67.479,0 c 6.203,0 11.25,-5.048 11.25,-11.249 l 0,-67.48 C 94.989,10.068 89.942,5.021 83.739,5.021 Z m 6.215,78.73 c 0,3.426 -2.788,6.213 -6.215,6.213 l -67.478,0 c -3.426,0 -6.214,-2.787 -6.214,-6.213 l 0,-67.48 c 0,-3.426 2.788,-6.214 6.214,-6.214 l 67.479,0 c 3.427,0 6.215,2.788 6.215,6.214 l 0,67.48 z</x:String>
+            <x:String>m 74.942002,69.105003 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z M 36.753001,30.916 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z M 83.739,5.021 l -67.479,0 c -6.203,0 -11.25,5.046 -11.25,11.25 l 0,67.48 C 5.01,89.952 10.056,95 16.26,95 l 67.479,0 c 6.202,0 11.25,-5.048 11.25,-11.249 l 0,-67.48 c 0,-6.203 -5.048,-11.25 -11.25,-11.25 z m 6.214,78.73 c 0,3.426 -2.788,6.213 -6.213,6.213 l -67.479,0 c -3.426,0 -6.213,-2.787 -6.213,-6.213 l 0,-67.48 c 0,-3.426 2.788,-6.214 6.213,-6.214 l 67.479,0 c 3.426,0 6.213,2.788 6.213,6.214 l 0,67.48 z</x:String>
+            <x:String>m 55.848,50.011002 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z m 19.095001,19.094001 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z M 36.755,30.916 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z M 83.74,5.021 l -67.479,0 c -6.203,0 -11.25,5.046 -11.25,11.25 l 0,67.48 C 5.012,89.952 10.058,95 16.261,95 l 67.479,0 c 6.203,0 11.25,-5.048 11.25,-11.249 l 0,-67.48 c 0,-6.203 -5.047,-11.25 -11.25,-11.25 z m 6.213,78.73 c 0,3.426 -2.787,6.213 -6.213,6.213 l -67.479,0 c -3.426,0 -6.214,-2.787 -6.214,-6.213 l 0,-67.48 c 0,-3.426 2.788,-6.214 6.214,-6.214 l 67.479,0 c 3.426,0 6.213,2.788 6.213,6.214 l 0,67.48 z</x:String>
+            <x:String>m 74.943001,69.105003 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z m -38.19,0 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z m 38.19,-38.189003 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z m -38.19,0 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z M 83.739,5.021 l -67.48,0 c -6.201,0 -11.248,5.046 -11.248,11.25 l 0,67.48 C 5.011,89.952 10.058,95 16.259,95 l 67.479,0 c 6.203,0 11.251,-5.048 11.251,-11.249 l 0,-67.48 C 94.99,10.068 89.942,5.021 83.739,5.021 Z m 6.215,78.73 c 0,3.426 -2.789,6.213 -6.215,6.213 l -67.48,0 c -3.426,0 -6.211,-2.787 -6.211,-6.213 l 0,-67.48 c 0,-3.426 2.785,-6.214 6.211,-6.214 l 67.479,0 c 3.427,0 6.214,2.788 6.214,6.214 l 0,67.48 0.002,0 z</x:String>
+            <x:String>m 55.849,50.011002 a 5.848,5.848 0 0 1 -5.848001,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848001,5.848 z m 19.094001,19.094001 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z m -38.189001,0 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z M 74.943001,30.916 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z m -38.189001,0 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z M 83.74,5.021 l -67.479,0 c -6.203,0 -11.25,5.046 -11.25,11.25 l 0,67.48 C 5.011,89.952 10.058,95 16.261,95 l 67.479,0 c 6.202,0 11.249,-5.048 11.249,-11.249 l 0,-67.48 c 0,-6.203 -5.047,-11.25 -11.249,-11.25 z m 6.213,78.73 c 0,3.426 -2.787,6.213 -6.213,6.213 l -67.479,0 c -3.427,0 -6.215,-2.787 -6.215,-6.213 l 0,-67.48 c 0,-3.426 2.788,-6.214 6.215,-6.214 l 67.479,0 c 3.426,0 6.213,2.788 6.213,6.214 l 0,67.48 0,0 z</x:String>
+            <x:String>m 74.941002,69.105003 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z m -38.188001,0 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z M 74.941002,50.011002 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z m -38.188001,0 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z M 74.941002,30.916 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z m -38.188001,0 a 5.848,5.848 0 0 1 -5.848,5.848 5.848,5.848 0 0 1 -5.848,-5.848 5.848,5.848 0 0 1 5.848,-5.848 5.848,5.848 0 0 1 5.848,5.848 z M 83.739,5.021 l -67.478,0 c -6.203,0 -11.249,5.046 -11.249,11.25 l 0,67.48 C 5.012,89.952 10.058,95 16.261,95 l 67.479,0 c 6.203,0 11.25,-5.048 11.25,-11.249 l 0,-67.48 C 94.989,10.068 89.942,5.021 83.739,5.021 Z m 6.215,78.73 c 0,3.426 -2.789,6.213 -6.215,6.213 l -67.479,0 c -3.427,0 -6.213,-2.787 -6.213,-6.213 l 0,-67.48 c 0,-3.426 2.786,-6.214 6.213,-6.214 l 67.479,0 c 3.426,0 6.215,2.788 6.215,6.214 l 0,67.48 z</x:String>
+        </controls:PathCollection>
     </Page.Resources>
 
     <Grid Background="{StaticResource PageBackgroundBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
@@ -37,7 +47,7 @@
               HorizontalAlignment="Center"
               Margin="20"
               Grid.Column="1">
-            <controls:StrengthIndicator />
+            <controls:StrengthIndicator Paths="{StaticResource DicePaths}" />
 
         </Grid>
 
@@ -47,7 +57,108 @@
                 Margin="20"
                 Grid.Row="1"
                 Grid.Column="0" />
+        <TextBlock Text="(Swipe to change)"
+                   Foreground="{StaticResource PageForegroundBrush}"
+                   HorizontalAlignment="Stretch"
+                   TextAlignment="Center"
+                   Margin="20"
+                   Grid.Row="1"
+                   Grid.Column="1" />
 
+        <!-- Thumbnails -->
+        <Grid HorizontalAlignment="Center"
+              Grid.Row="2"
+              Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <controls:StrengthIndicator Value="0"
+                                        Fill="#8882A8"
+                                        Stroke="#8882A8"
+                                        Margin="8"
+                                        Grid.Column="0" />
+            <controls:StrengthIndicator Value="1"
+                                        Margin="8"
+                                        Fill="SeaGreen"
+                                        Stroke="SeaGreen"
+                                        Grid.Column="1" />
+            <controls:StrengthIndicator Value="2"
+                                        Margin="8"
+                                        Fill="LightGreen"
+                                        Stroke="LightGreen"
+                                        Grid.Column="2" />
+            <controls:StrengthIndicator Value="3"
+                                        Margin="8"
+                                        Fill="Khaki"
+                                        Stroke="Khaki"
+                                        Grid.Column="3" />
+            <controls:StrengthIndicator Value="4"
+                                        Margin="8"
+                                        Fill="Orange"
+                                        Stroke="Orange"
+                                        Grid.Column="4" />
+            <controls:StrengthIndicator Value="5"
+                                        Margin="8"
+                                        Fill="Firebrick"
+                                        Stroke="Firebrick"
+                                        Grid.Column="5" />
+        </Grid>
+        <Grid HorizontalAlignment="Center"
+              Grid.Row="2"
+              Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <controls:StrengthIndicator Value="0"
+                                        Paths="{StaticResource DicePaths}"
+                                        Fill="#8882A8"
+                                        Stroke="#141426"
+                                        Margin="8"
+                                        Grid.Column="0" />
+            <controls:StrengthIndicator Value="1"
+                                        Paths="{StaticResource DicePaths}"
+                                        Fill="#8882A8"
+                                        Stroke="#141426"
+                                        Margin="8"
+                                        Grid.Column="1" />
+            <controls:StrengthIndicator Value="2"
+                                        Paths="{StaticResource DicePaths}"
+                                        Fill="#8882A8"
+                                        Stroke="#141426"
+                                        Margin="8"
+                                        Grid.Column="2" />
+            <controls:StrengthIndicator Value="3"
+                                        Paths="{StaticResource DicePaths}"
+                                        Fill="#8882A8"
+                                        Stroke="#141426"
+                                        Margin="8"
+                                        Grid.Column="3" />
+            <controls:StrengthIndicator Value="4"
+                                        Paths="{StaticResource DicePaths}"
+                                        Fill="#8882A8"
+                                        Stroke="#141426"
+                                        Margin="8"
+                                        Grid.Column="4" />
+            <controls:StrengthIndicator Value="5"
+                                        Paths="{StaticResource DicePaths}"
+                                        Fill="#8882A8"
+                                        Stroke="#141426"
+                                        Margin="8"
+                                        Grid.Column="5" />
+        </Grid>
+        
         <!-- Descriptions -->
         <TextBlock Text="Color Change"
                    Foreground="{StaticResource PageForegroundBrush}"
@@ -56,14 +167,14 @@
                    FontSize="18"
                    Margin="12"
                    Grid.Column="0"
-                   Grid.Row="2" />
-        <TextBlock Text="Animated SVG"
+                   Grid.Row="3" />
+        <TextBlock Text="Interactive"
                    Foreground="{StaticResource PageForegroundBrush}"
                    HorizontalAlignment="Stretch"
                    TextAlignment="Center"
                    FontSize="18"
                    Margin="12"
                    Grid.Column="1"
-                   Grid.Row="2" />
+                   Grid.Row="3" />
     </Grid>
 </Page>
