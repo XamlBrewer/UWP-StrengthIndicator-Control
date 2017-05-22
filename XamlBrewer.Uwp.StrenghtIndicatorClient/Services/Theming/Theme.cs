@@ -10,6 +10,8 @@ namespace Mvvm.Services
 {
     public class Theme
     {
+        private static Dictionary<Type, Color> AccentColors = new Dictionary<Type, Color>();
+
         // Call this in App OnLaunched.
         // Requires reference to Windows Mobile Extensions for the UWP.
         /// <summary>
@@ -17,6 +19,9 @@ namespace Mvvm.Services
         /// </summary>
         public static void ApplyToContainer()
         {
+            // Custom accent color.
+            ApplyAccentColor((Color)Application.Current.Resources["DefaultAccentColor"]);
+
             // PC customization
             if (ApiInformation.IsTypePresent("Windows.UI.ViewManagement.ApplicationView"))
             {
@@ -47,6 +52,43 @@ namespace Mvvm.Services
             statusBar.BackgroundOpacity = 1;
             statusBar.BackgroundColor = ((SolidColorBrush)Application.Current.Resources["StatusbarBackgroundBrush"]).Color;
             statusBar.ForegroundColor = Colors.White;
+        }
+
+        /// <summary>
+        /// Applies the accent color.
+        /// </summary>
+        /// <param name="accentColor">Desired accent color.</param>
+        /// <remarks>Ignored when user selected high contrast mode.</remarks>
+        public static void ApplyAccentColor(Color accentColor)
+        {
+            if (!new AccessibilitySettings().HighContrast)
+            {
+                Application.Current.Resources["SystemAccentColor"] = accentColor;
+            }
+        }
+
+        public static void ApplyAccentColor(Type pageType)
+        {
+            if (AccentColors.ContainsKey(pageType))
+            {
+                ApplyAccentColor(AccentColors[pageType]);
+            }
+            else
+            {
+                ApplyAccentColor((Color)Application.Current.Resources["DefaultAccentColor"]);
+            }
+        }
+
+        public static void RegisterAccentColor(Type pageType, Color accentColor)
+        {
+            if (AccentColors.ContainsKey(pageType))
+            {
+                AccentColors.Add(pageType, accentColor);
+            }
+            else
+            {
+                AccentColors[pageType] = accentColor;
+            }
         }
     }
 }
