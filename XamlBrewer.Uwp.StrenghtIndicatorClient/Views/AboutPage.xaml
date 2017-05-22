@@ -20,7 +20,7 @@
                    Foreground="Silver"
                    FontSize="24"
                    VerticalAlignment="Center"
-                   Grid.Column="1">This app is a test container for a Radial Range Indicator for UWP.</TextBlock>
+                   Grid.Column="1">This app is a test container for a Strangth Indicator control for UWP.</TextBlock>
 
         <Viewbox Grid.Column="2"
                  StretchDirection="DownOnly"
