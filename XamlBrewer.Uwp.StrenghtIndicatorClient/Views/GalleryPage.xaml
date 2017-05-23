@@ -43,12 +43,17 @@
         </Grid>
 
         <!-- Right -->
-        <Grid VerticalAlignment="Center"
+        <Grid ManipulationMode="TranslateX"
+              ManipulationCompleted="StrengthIndicator_ManipulationCompleted"
+              VerticalAlignment="Center"
               HorizontalAlignment="Center"
               Margin="20"
-              Grid.Column="1">
-            <controls:StrengthIndicator Paths="{StaticResource DicePaths}" />
-
+              Grid.Column="1"
+              Background="Transparent">
+            <controls:StrengthIndicator x:Name="InteractiveIndicator"
+                                        Paths="{StaticResource DicePaths}"
+                                        Fill="#8882A8"
+                                        Stroke="#141426" />
         </Grid>
 
         <!-- Sliders -->
@@ -57,7 +62,7 @@
                 Margin="20"
                 Grid.Row="1"
                 Grid.Column="0" />
-        <TextBlock Text="(Swipe to change)"
+        <TextBlock Text="(To change the value, swipe left or right on the dice.)"
                    Foreground="{StaticResource PageForegroundBrush}"
                    HorizontalAlignment="Stretch"
                    TextAlignment="Center"
@@ -158,7 +163,7 @@
                                         Margin="8"
                                         Grid.Column="5" />
         </Grid>
-        
+
         <!-- Descriptions -->
         <TextBlock Text="Color Change"
                    Foreground="{StaticResource PageForegroundBrush}"

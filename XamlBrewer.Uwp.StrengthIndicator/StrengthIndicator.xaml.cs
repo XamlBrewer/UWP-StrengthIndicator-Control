@@ -84,6 +84,16 @@ namespace XamlBrewer.Uwp.Controls
 
             if (indicator == null) return;
 
+            if (indicator.Value > indicator.Maximum)
+            {
+                indicator.Value = indicator.Maximum;
+            }
+
+            if (indicator.Value < Minimum)
+            {
+                indicator.Value = Minimum;
+            }
+
             // var shape = (indicator.Content as Viewbox).Child; // Straightforward version.
             var shape = indicator.FindChild<Windows.UI.Xaml.Shapes.Path>("Shape");
 
