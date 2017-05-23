@@ -29,7 +29,7 @@
     <SolidColorBrush x:Key="SplitViewForegroundBrush"
                      Color="#141426" />
     <SolidColorBrush x:Key="HamburgerForegroundBrush"
-                     Color="#D9BFD0" />
+                     Color="#8882A8" />
 
     <!-- Splitview Content -->
     <SolidColorBrush x:Key="PageBackgroundBrush"

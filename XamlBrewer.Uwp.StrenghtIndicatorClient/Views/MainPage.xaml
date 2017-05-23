@@ -31,8 +31,7 @@
         <!-- Default -->
         <controls:StrengthIndicator x:Name="Default"
                                     Value="{Binding Path=Value, ElementName=Slider, Mode=TwoWay}"
-                                    Height="240"
-                                    Width="240"
+                                    Margin="20"
                                     Grid.Row="0"
                                     Grid.Column="0" />
         <!-- Dependency Properties -->
@@ -41,8 +40,7 @@
             <controls:StrengthIndicator Value="{Binding Path=Value, ElementName=Slider2, Mode=TwoWay}"
                                         Fill="#8882A8"
                                         Stroke="#141426"
-                                        Height="240"
-                                        Width="240">
+                                        Margin="20">
                 <controls:StrengthIndicator.Paths>
                     <controls:PathCollection>
                         <!-- Created by Khomsun Chaiwong from the Noun Project.-->
